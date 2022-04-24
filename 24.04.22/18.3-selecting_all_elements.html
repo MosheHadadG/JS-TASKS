@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="myFirstDiv"></div>
+  <div id="mySecondDiv"></div>
+  <div id="myThridDiv"></div>
+  <div id="myFourthDiv"></div>
+
+  <script>
+    // Somebody selected the elements and stored them into individual variables like this:
+    const myFirstDiv = document.querySelector("#myFirstDiv");
+    const mySecondDiv = document.querySelector("#mySecondDiv");
+    const myThirdDiv = document.querySelector("#myThirdDiv");
+    const myFourthDiv = document.querySelector("#myFourthDiv");
+
+  // 1 option to store all in one NodeList with querySelectorAll:
+  const divsArr = document.querySelectorAll('div');
+  const myFirstDiv_2 = divsArr[0]
+  const mySecondDiv_2 = divsArr[1]
+  const myThirdDiv_2 = divsArr[2]
+  const myFourthDiv_2 = divsArr[3]
+  console.log(myFirstDiv)
+  console.log(myFirstDiv_2)
+  </script>
+
+</body>
+
+</html>
