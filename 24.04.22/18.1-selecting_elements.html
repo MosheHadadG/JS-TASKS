@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,
+initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Header</h1>
+  <p>Paragraph</p>
+  <a href="#">link</a>
+  <img src="" alt="" />
+  <div class="x">Div with a class</div>
+  <div id="y">Div with an id</div>
+  <input type="text" />
+  <input type="text" />
+  <input type="text" />
+</body>
+<script>
+
+// 1
+// not using querySelector
+const h1 = document.getElementsByTagName('h1');
+const p = document.getElementsByTagName('p');
+const a = document.getElementsByTagName('a');
+const img = document.getElementsByTagName('img');
+const divX = document.getElementsByClassName('x');
+const divY = document.getElementById('y');
+const inputs = document.getElementsByTagName('input');
+console.log(h1[0]);
+console.log(p[0]);
+console.log(a[0]);
+console.log(img[0]);
+console.log(divX[0]);
+console.log(divY);
+console.log(inputs);
+
+// 2
+// using querySelector
+const h1_q = document.querySelector('h1');
+const p_q = document.querySelector('p');
+const a_q = document.querySelector('a');
+const img_q = document.querySelector('img');
+const divX_q = document.querySelector('.x');
+const divY_q = document.querySelector('#y');
+const inputs_q = document.querySelectorAll('input');
+console.log(h1_q);
+console.log(p_q);
+console.log(a_q);
+console.log(img_q);
+console.log(divX_q);
+console.log(divY_q);
+console.log(inputs_q);
+
+
+// 3
+// forEach with getElementsByTagName (inputs)
+// (Spread) -  HtmlCollection To Array
+inputsArr = [...inputs];
+inputsArr.forEach((input) => {
+  console.log(input);
+});
+
+// forEach with querySelector (inputs)
+// NodeList dont need Spread.
+inputs_q.forEach((input) => {
+  console.log(input);
+})
+</script>
+
+</html>
