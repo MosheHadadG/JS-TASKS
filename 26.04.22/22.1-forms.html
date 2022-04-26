@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+
+  }
+
+  .container {
+    width: 600px;
+    height: 400px;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  #formId {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  input {
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+  }
+  p {
+    font-size: 2rem;
+    color: rgb(9, 255, 0);
+  }
+</style>
+
+<body>
+  <div class="container">
+    <form action="" id="formId">
+      <label for="username">name: </label>
+      <input type="text" name="username">
+      <label for="age">age: </label>
+      <input type="number" name="age">
+      <label for="email">email: </label>
+      <input type="email" name="email">
+      <button type="submit">submit</button>
+    </form>
+  </div>
+  <p></p>
+
+  <script src="22.1-forms-script.js"></script>
+</body>
+
+</html>
