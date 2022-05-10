@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox {
+  height: 100px;
+}
+
+input {
+  width: 375px;
+  height: 25px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+button {
+  height: 47px;
+  border-radius: 13px;
+  background-color: orange;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+p{
+  color: red;
+}
+
+#Box {
+  margin: 0 auto;
+  width: 320px;
+  height: 450px;
+  box-shadow: 0 12px 12px 0 black;
+  cursor: pointer;
+}
+
+#Box .imgBox {
+  width: 320px;
+  height: 250px;
+}
+
+#Box .headingBox {
+  font-weight: bold;
+  text-align: center;
+}
+
+#Box .descBox {
+  padding: 10px;
+  font-size: 1.5rem;
+}
